@@ -1,0 +1,242 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+  background-image: url('https://images.pexels.com/photos/2088205/pexels-photo-2088205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=10');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home{
+   padding-top: 120px;
+  font-weight: bold;
+  color:black;
+ 
+ }
+ .btn{background-color: cyan;
+  width:auto;
+  color: black;
+  display: block;
+  margin:auto;
+}
+ p{
+  color: black;
+  font-size: large;
+  width:38vw;
+ }
+
+ #aboutus{
+    font-weight:600px;
+    color:black;
+    margin-top: 100px;
+    
+   }
+
+#logo{
+border-radius: 58%;
+border:5px solid brown;
+}
+section{
+    width:100vw;
+    height:100vh;
+    padding-left: 100px;
+    padding-right: 100px;
+  
+}
+.navbar li a{
+  
+  color:black;
+  font-weight: 900;
+  transition: all 0.3s;
+}
+.navbar li a:hover{
+  color:whitesmoke;
+  background-color: cyan;
+  font-weight: 900;
+  border-radius: 10px;
+}
+card-body{
+    float: right;
+    margin-right: 0;
+}
+h1{
+  padding-top: 50px;
+
+}.error {
+  display: block; /* Make error messages visible */
+  color: red; /* Set error message color */
+  font-size: 14px; /* Adjust font size as needed */
+  animation: none;
+}
+
+   .card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 6px 8px 0 rgba(31, 31, 52, 0.18);
+  }
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #262121;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .carousel-control-prev span,
+  .carousel-control-next span {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  @media screen and (min-width: 577px) {
+    .cards-wrapper {
+      display: flex;
+    }
+    .card {
+      margin: 1 0.5em;
+      width: calc(130% / 2);
+      border-radius: 5%;
+    }
+    .image-wrapper {
+      height: 20vw;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .card:not(:first-child) {
+      display: none;
+    }
+  }
+  
+  .image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    section {
+      width: 90%; /* Change width to a percentage for responsiveness */
+    }
+  }
+  #aboutus{
+    font-size: large;
+    text-wrap:balance;
+    text-align: justify;
+    display: inline-block;
+   }
+   .responsive {
+    width: 100%;
+    height: 80%;
+    border:2px solid cyan;
+  }
+  .user-content p{
+    margin-top:5px;
+    font-size:12px;
+}
+hr{
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.ratings i{
+    color:cyan;
+}
+#overview,#relatedbooks,#sameauthor,#reviews{
+  margin-top: 150px;
+  padding-top: 100px;
+  width:100vw;
+  height:auto;
+}
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+.footer {
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+  margin:0;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.social-icons a:hover {
+  color: cyan;
+  text-decoration: none;
+}
+/* Custom CSS for responsiveness */
+@media (max-width: 991px) {
+  /* Adjust padding for smaller screens */
+  section {
+    padding: 80px 0;
+    height:auto;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Adjust padding and font size for smaller screens */
+  section {
+    padding: 60px 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Further adjust padding and font size for extra small screens */
+  section {
+    padding: 40px 0;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+.password-strength {
+  height: 10px;
+  margin-bottom: 10px;
+}
+.strength-bar {
+  display: inline-block;
+  height: 100%;
+  width: 0%;
+}
+.strong {
+  background-color: green;
+}
+.medium {
+  background-color: orange;
+}
+.poor {
+  background-color: red;
+}

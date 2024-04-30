@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Library Lounge</title>
+  </head>
+  <body>
+    <div class="container highlightTextOut">
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#index.html"> <img src="./images/logo2.png" id="logo" width="100px" height="me-auto"></a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Back to Home</a>
+              </li>
+             
+                  </div>
+      </nav>
+   </header>
+   </div>
+   <section id="home">
+    <div class="container-fluid">
+            <div class="row">  <div class="col-lg-6 col-md-6">
+             <h1>Discover literary treasures and let your imagination roam free.</h1>
+                         <p class="p-4 justify-content-center">
+                          <i> "Welcome to our Literary Café, where every book is a journey and every page holds a new adventure. Explore worlds within worlds as you sip on the elixir of words and imagination. Here,we believe in the magic of storytelling. Sip, savor, and lose yourself in the enchanting world of books."</i></p>
+             </div>
+             <div class="col-md-6 d-inline">
+              <div id="login">
+                    <div class="justify-content-center mt-5">
+                        <div class="card shadow">
+                          <div class="card-title text-center border-bottom">
+                            <h2 class="p-3">Signup</h2>
+                          </div>
+                          <div class="card-body">
+                            <form id="signupForm" onsubmit="return validateSignUp()" action="index.html">
+                                <div class="mb-4 ">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" class="form-control" id="email" name="email" autocomplete="off" />
+                                    </div>
+                              <div class="mb-4">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" name="phone" autocomplete="off "/>
+                                  </div>
+                              <div class="mb-4">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" onkeyup="checkPasswordStrength()" autocomplete="off"/>
+                                 <div class="password-strength">
+                                <div id="strengthBar" class="strength-bar"></div>
+                              </div></div>
+                              <div class="mb-4">
+                                <input type="checkbox" class="form-check-input" id="remember" />
+                                <label for="remember" class="form-label">Remember Me</label>
+                              </div>
+                               <div class="mb-4">
+                                Don't have an account? <a href="index.html" class="signuplink" >Login now!</a>
+                              </div>
+                              <span id="signupError" class="error"></span><br>
+                              <div class="d-grid">
+                                <button type="submit" class="btn text-dark main-bg">Signup</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                    </div>
+              </div>
+              
+    </section><script src="validation.js"></script>          </body>
+        </html>
